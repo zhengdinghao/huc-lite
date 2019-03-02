@@ -1,51 +1,23 @@
-// pages/more/more.js
+// pages/about/about.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imageUrl: 'https://wechat.inwang.net/img/index.png',
-    list: [{
-      name: '更新日志',
-      ico: 'notice',
-      url: 'notice/notice'
-     
-      }, {
-      name: '商大地图',
-      ico: 'map',
-      url: 'map/map'
-      }, {
-        name: '商大校历',
-        ico: 'calendar',
-        url: 'calendar/calendar'
-      }, {
-      name: 'OpenAPI',
-      ico: 'openapi',
-      url: 'openapi/openapi'
-      }, {
-        name: '待解锁',
-        ico: 'lock',
-        url: 'occupy/occupy'
-    }, {
-      name: '待解锁',
-      ico: 'lock',
-      url: ''
-    }, {
-        name: '待解锁',
-        ico: 'lock',
-        url: ''
-      }, {
-      name: '待解锁',
-      ico: 'lock',
-      url: ''
-    }, {
-      name: '待解锁',
-      ico: 'lock',
-      url: ''
-    }]
   },
-
+  formSubmit: function (e) {
+    var that = this
+    var types = e.detail.value.type;
+    if (!e.detail.value.text) {
+      var text = '马丽心';
+    } else {
+      var text = e.detail.value.text;
+    }
+    wx.navigateTo({
+      url: '/pages/index/inquire/result?textData=' + text + '&typesData=' + types
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

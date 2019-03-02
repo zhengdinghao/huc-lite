@@ -1,0 +1,23 @@
+<view class="table">
+  <view class="tr">
+    <view class="th idx"></view>
+    <view class="th">周一</view>
+    <view class="th">周二</view>
+    <view class="th">周三</view>
+    <view class="th">周四</view>
+    <view class="th">周五</view>
+    <view class="th">周六</view>
+    <view class="th">周日</view>
+  </view>
+  <block wx:for="{{table}}" wx:for-item="i" wx:key="listData_key">
+    <view class="tr">
+      <view class="td idx">{{index+1}}</view>
+      <view class="td" wx:for="{{i}}" wx:for-item="j" wx:key="td_key">
+              <text wx:if="{{j}}" decode="{{true}}" space="{{true}}">{{j}}\n</text>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="weui-loadmore weui-loadmore_line">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">这是一条底线</view>
+        </view>

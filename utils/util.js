@@ -16,7 +16,7 @@ const formatNumber = n => {
 const todayInfo = () => {
   var todayInfo = Date.parse(new Date())
   todayInfo = todayInfo / 1000
-  todayInfo = parseInt((todayInfo - 1540742400)/86400)
+  todayInfo = parseInt((todayInfo - 1540742400) / 86400)
   todayInfo = todayInfo % 7
   return todayInfo
 }

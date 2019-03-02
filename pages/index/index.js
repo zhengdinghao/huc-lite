@@ -11,27 +11,27 @@ Page({
     list: [{
       name: '今日课表',
       ico: 'table',
-      url: '../table/table'
+      url: 'table/table'
     }, {
       name: '图书馆藏',
       ico: 'library',
-        url: '../search/search'
+        url: 'books/search'
     }, {
       name: '成绩查询',
       ico: 'search',
-        url: '../grade/grade'
-    }, {
-      name: '表白墙',
-      ico: 'heart',
-      url: '../heart/index/index'
-    }, {
+        url: 'grade/grade'
+      }, {
+        name: '蹭课查询',
+        ico: 'inquire',
+        url: 'inquire/inquire'
+      }, {
         name: '考场查询',
         ico: 'exam',
-        url: '../exam/exam'
+        url: 'exam/exam'
       }, {
       name: '关于程序',
       ico: 'about',
-      url: '../about/about'
+      url: 'about/about'
     }]
   },
   //事件处理函数

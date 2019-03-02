@@ -1,0 +1,49 @@
+page,
+.page{
+    background-color:#F8F8F8;
+}
+.page__bd{
+    height: 100%;
+}
+.page__bd{
+    padding-bottom: 0;
+}
+.weui-cells__title{
+    padding-top: 10px;
+}
+.weui-navbar{
+    background-color:#FFFFFF;
+    position:fixed;
+    top:0;
+    
+}
+.weui-tab__content{
+    padding-top: 90px;
+    text-align: center;
+}
+.colors{
+  color:#1f9baa;
+}
+text{
+  line-height: 5px;
+  font-size: 80%;
+}
+.btn-area{
+  padding-top: 30px;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.page-body{
+  padding-top: 50px;
+}
+
+.weui-footer{
+  padding-top: 30px;
+}
+
+.weui-btn{
+  color: #fff;
+  border: 1px solid #fbc2eb;
+  background-image: linear-gradient(-45deg, #fbc2eb 0%, #a6c1ee 100%);
+}

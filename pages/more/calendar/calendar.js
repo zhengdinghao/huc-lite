@@ -1,49 +1,11 @@
-// pages/more/more.js
+// pages/calendar/calendar.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    imageUrl: 'https://wechat.inwang.net/img/index.png',
-    list: [{
-      name: '更新日志',
-      ico: 'notice',
-      url: 'notice/notice'
-     
-      }, {
-      name: '商大地图',
-      ico: 'map',
-      url: 'map/map'
-      }, {
-        name: '商大校历',
-        ico: 'calendar',
-        url: 'calendar/calendar'
-      }, {
-      name: 'OpenAPI',
-      ico: 'openapi',
-      url: 'openapi/openapi'
-      }, {
-        name: '待解锁',
-        ico: 'lock',
-        url: 'occupy/occupy'
-    }, {
-      name: '待解锁',
-      ico: 'lock',
-      url: ''
-    }, {
-        name: '待解锁',
-        ico: 'lock',
-        url: ''
-      }, {
-      name: '待解锁',
-      ico: 'lock',
-      url: ''
-    }, {
-      name: '待解锁',
-      ico: 'lock',
-      url: ''
-    }]
+    imageUrl: "https://shangda-1253546536.cos.ap-beijing.myqcloud.com/xiaoli1.jpg"
   },
 
   /**

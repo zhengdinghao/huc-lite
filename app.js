@@ -4,10 +4,10 @@ App({
     console.log(options)
     var scene = ['1011', '1089'];
     var indexof = scene.indexOf(options.scene);
-    if (indexof == -1 && options.path != 'pages/table/table') {
+    if (indexof == -1 && options.path != 'pages/index/table/table' && options.path != 'pages/index/table/all') {
       if (wx.getStorageSync('isChecked')) {
         wx.navigateTo({
-          url: '/pages/table/table'
+          url: '/pages/index/table/table'
         })
       }
     }
